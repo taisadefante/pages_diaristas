@@ -117,94 +117,95 @@ header {
 }
 
 .principal-image {
-    position: relative;
+  position: relative;
 }
 
 .principal-image::after,
 .principal-image::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
 }
 
 .principal-image::before {
-    width: 131px;
-    height: 131px;
-    background-color: var(--primary);
-    top: 80px;
+  width: 131px;
+  height: 131px;
+  background-color: var(--primary);
+  top: 80px;
 }
 
 .principal-image::after {
-    width: 37px;
-    height: 37px;
-    background-color: var(--light-grey);
-    bottom: 45px;
-    z-index: 50;
+  width: 37px;
+  height: 37px;
+  background-color: var(--light-grey);
+  bottom: 45px;
+  z-index: 50;
 }
 
 /* Por que Section */
 .porq {
-    background-image: linear-gradient(var(--secondary), var(--primary));
-    margin-top: -100px;
-    padding: 100px 0 150px 0;
-    color: #fff;
-    position: relative;
+  background-image: linear-gradient(var(--secondary), var(--primary));
+  margin-top: -100px;
+  padding: 100px 0 150px 0;
+  color: #fff;
+  position: relative;
 }
 
 .porq::before {
-    content: '';
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: solid 4px #fff;
-    background-color: var(--secondary);
-    background-image: url(../img/icon-trigulo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    right: 50%;
-    transform: translate(50%);
-    top: -30px;
-    position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 4px #fff;
+  background-color: var(--secondary);
+  background-image: url(../img/icon-trigulo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 50%;
+  transform: translate(50%);
+  top: -30px;
+  position: absolute;
 }
 
 .porq h2 {
-    margin: 0 0 30px 0;
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
+  margin: 0 0 30px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .porq hr {
-    width: 10%;
-    border-color: rgba(255, 255, 255, 0.25);
+  width: 10%;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .porq-campos-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 50px;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin-top: 50px;
 }
 
 .porq-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.porq-item h4, .porq-item p {
-    margin: 0;
+.porq-item h4,
+.porq-item p {
+  margin: 0;
 }
 
 .porq-item div:first-child {
-    border: solid 2px #fff;
-    border-radius: 50%;
-    padding: 5px;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .porq-item i {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .porq-campos-item hr {
@@ -215,7 +216,7 @@ header {
 .division-wave {
   width: 100%;
   height: 100px;
-  background-image: url('../img/wave.png');
+  background-image: url("../img/wave.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
@@ -257,11 +258,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
-.panel, .accordion {
+.panel,
+.accordion {
   border: solid 2px var(--primary);
   text-align: left;
 }
@@ -272,12 +274,12 @@ header {
   display: none;
   border-top: none;
   font-size: 17px;
-  color: #2C3A57;
+  color: #2c3a57;
 }
 
 .accordion h5 {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 
@@ -299,6 +301,164 @@ header {
 
 .active {
   border-bottom: none;
+}
+
+/*formulario */
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 2rem;
+  color: #581ecd;
+  text-align: center;
+}
+
+.form {
+  padding: 1rem;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1rem;
+  left: 50%;
+  top: 50%;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1.5rem;
+}
+
+input {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+/* Main content */
+.seguro-field {
+  background-color: #fafafa;
+  position: sticky;
+  top: 0;
+}
+
+.seguro {
+  color: var(--dark-grey);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+}
+
+.seguro p {
+  margin: 0;
+}
+
+.page-title {
+  color: var(--primary);
+  text-align: center;
+}
+
+.principal-content {
+  display: grid;
+  place-items: center;
+  margin: 50px 0;
+  padding: 50px 0;
+  box-shadow: 1px 1px 15px #a9a9a950;
+}
+
+.form-field {
+  width: 500px;
+}
+
+.principal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.principal-content form input {
+  border: solid 2px #f0f0f0;
+  background-color: #fafafa;
+  padding: 15px;
+}
+
+.principal-content form input:focus {
+  outline: none;
+}
+
+.principal-content form input::placeholder {
+  color: #c4c4c4;
+}
+
+.password-recover {
+  color: #9b9b9b;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.btn-form a {
+  display: none;
+}
+
+.btn-form button {
+  padding: 17px 20px;
+  width: 250px;
+  border-radius: 3px;
+  outline: auto;
+  color: #fff;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+/* card diarista */
+
+h1 {
+  color: #581ecd;
+  text-align: center;
+  font-size: 30px;
+}
+
+.containerHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 4px solid #581ecd;
+  width: 230px;
+  margin: 40px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.card img {
+  width: 40%;
+}
+
+.card h2 {
+  color: #581ecd;
+  margin-bottom: 0;
+}
+
+.card .estado {
+  font-size: 10px;
+  margin-top: 0;
+  padding: 0;
+}
+
+span {
+  color: red;
 }
 
 /* Footer */
@@ -346,20 +506,21 @@ footer {
   height: 50px;
   border-radius: 50%;
   padding: 10px;
-  background-color: #581ECD;
+  background-color: #581ecd;
   display: grid;
   place-items: center;
 }
 
 .social-media a:hover {
   transform: scale(1.07);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 /* Breakpoints */
-@media(max-width: 1200px) {}
+@media (max-width: 1200px) {
+}
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .principal {
     background-size: 100% 100%;
     background-position: bottom;
@@ -389,14 +550,15 @@ footer {
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
   }
 
-  .principal-section, .principal-description {
+  .principal-section,
+  .principal-description {
     width: 100%;
     display: block;
   }
@@ -406,7 +568,8 @@ footer {
     max-width: 100%;
   }
 
-  .principal-diarista-text, .principal-description p {
+  .principal-diarista-text,
+  .principal-description p {
     border: none;
     padding: 0;
     font-weight: normal;
@@ -414,7 +577,7 @@ footer {
     margin: 0;
   }
 
-  .principal-diarista-text::after{
+  .principal-diarista-text::after {
     display: none;
   }
 
@@ -430,8 +593,7 @@ footer {
   }
 }
 
-
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .porq-campos-item {
     gap: 15px;
   }
