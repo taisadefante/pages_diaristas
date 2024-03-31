@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/diarista.css" />
+    <link rel="stylesheet" href="./style/cadastro_diarista.css" />
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="./fonts/tw-icons/css/treinaweb-icons.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -14,53 +26,102 @@
             <img src="./img/logo-ediaristas.png" alt="Logo E-diaristas"
           /></a>
           <div class="btn-header">
-            <a class="btn-contained" href="#">Seja uma diarista</a>
-            <a class="btn-void" href="#">Login</a>
+            <a class="btn-contained" href="./cadastro_diarista.html"
+              >Seja uma diarista</a
+            >
+            <a class="btn-void" href="./login.html">Login</a>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-item">
-            <h4>Menu</h4>
-            <ul>
-              <li>
-                <a href="#">Encontrar uma diarista</a>
-              </li>
-              <li>
-                <a href="#">Seja um(a) diarista</a>
-              </li>
-              <li>
-                <a href="#">Porquê usar o E-Diarista</a>
-              </li>
-              <li>
-                <a href="#">Principais dúvidas</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-item">
-            <h4>Quem somos</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor
-              massa. Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Nulla at risus.
-            </p>
-          </div>
-          <div class="footer-item">
-            <h4>Redes sociais</h4>
-            <div class="social-media">
-              <a href="#"><i class="twf-facebook-f"></i></a>
-              <a href="#"><i class="twf-instagram"></i></a>
-              <a href="#"><i class="twf-youtube"></i></a>
+    <main>
+      <section class="form">
+        <div class="formulario">
+          <h1>Faça seu Cadastro</h1>
+          <form action="#" method="post" class="containerForm">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="NOME"
+              required
+            />
+            <input
+              type="text"
+              name="telefone"
+              id="telefone"
+              placeholder="TELEFONE"
+              required
+            />
+            <input type="email" name="email" id="email" placeholder="EMAIL" />
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              placeholder="ENDEREÇO"
+              required
+            />
+            <input
+            type="text"
+            name="servicos"
+            id="servicos"
+            placeholder="SERVIÇOS"
+            required
+          />
+
+            <button
+              type="submit"
+              id="btn_cadastrar"
+              class="botao"
+              onclick="cadastrar()"
+            >
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <footer>
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-item">
+                <h4>Menu</h4>
+                <ul>
+                  <li>
+                    <a href="./diarista.html">Encontrar uma diarista</a>
+                  </li>
+                  <li>
+                    <a href="./cadastro_diarista.html">Seja um(a) diarista</a>
+                  </li>
+                  <li>
+                    <a href="#">Porquê usar o E-Diarista</a>
+                  </li>
+                  <li>
+                    <a href="#">Principais dúvidas</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <h4>Quem somos</h4>
+                <p>
+                  Nossa empresa tem solução confiável para contratação de diaristas
+                  qualificadas. Somos uma equipe comprometida em facilitar sua vida,
+                  fornecendo serviços de limpeza residencial e comercial
+                  excepcionais.
+                </p>
+              </div>
+              <div class="footer-item">
+                <h4>Redes sociais</h4>
+                <div class="social-media">
+                  <a href="#"><i class="twf-facebook-f"></i></a>
+                  <a href="#"><i class="twf-instagram"></i></a>
+                  <a href="#"><i class="twf-youtube"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./js/script.js"></script>
-  </body>
-</html>
+        </footer>
+        <script src="./js/script.js"></script>
+      </body>
+    </html>
+    
